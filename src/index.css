@@ -1,1 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+  --apple-bg: #F2F2F7;
+  --apple-card: #FFFFFF;
+  --apple-text: #1C1C1E;
+  --apple-secondary: #8E8E93;
+  --apple-blue: #007AFF;
+  --apple-green: #34C759;
+  --apple-red: #FF3B30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --apple-bg: #000000;
+    --apple-card: #1C1C1E;
+    --apple-text: #FFFFFF;
+    --apple-secondary: #98989F;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--apple-bg);
+  color: var(--apple-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}

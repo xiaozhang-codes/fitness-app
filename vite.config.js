@@ -8,4 +8,3 @@ export default defineConfig({
     host: true,
   },
 });
-// 清除vercel缓存临时更新
